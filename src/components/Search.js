@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 const Search = () => {
-    const [term, setTerm] = useState('quantum');
+    const [term, setTerm] = useState('');
 
     //set @debounceTerm initial value to @terms initial value
     const [debounceTerm, setDebounceTerm] = useState(term)
