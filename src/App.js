@@ -1,21 +1,20 @@
-import React  from "react";
-// import Translate from "./components/Translate";
+import React, { useState } from "react";
+import Translate from "./components/Translate";
 import Accordion from "./components/Accordion";
-// import Search from "./components/Search";
-// import Dropdown from "./components/Dropdown";
+import Search from "./components/Search";
+import Dropdown from "./components/Dropdown";
 import Data from "./Data";
-// import Route from "./components/Route";
-// import Header from "./components/Header";
+import Route from "./components/Route";
+import Header from "./components/Header";
 
 const App = () => {
     const toggleItems = Data.toggleItems
-    // const languages = Data.languages;
-    // const dropdownOptions = Data.dropdownOptions;
-    // const [selected, setSelected] = useState( dropdownOptions[0] );
-    // const [showDropdown, setShowDropdown] = useState( true )
+    const languages = Data.languages;
+    const dropdownOptions = Data.dropdownOptions;
+    const [selected, setSelected] = useState( dropdownOptions[0] );
+    const [showDropdown, setShowDropdown] = useState( true )
 
     return (
-        /*
         <div>
             <Header />
             <Route path="/"><Accordion items={toggleItems} /></Route>
@@ -37,10 +36,7 @@ const App = () => {
                 </div>
             </Route>
         </div>
-*/
-        <div>
-            <Accordion items={toggleItems} />
-        </div>
+
     );
 }
 
